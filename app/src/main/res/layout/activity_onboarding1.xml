@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity_onboarding1">
+
+    <TextView
+        android:id="@+id/welcome_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="60dp"
+        android:text="@string/welcome_msg"
+        android:textColor="@color/dark_purple"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/onboarding1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/onboarding1"
+        android:layout_width="392dp"
+        android:layout_height="362dp"
+        app:layout_constraintBottom_toTopOf="@+id/onboarding1_msg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_msg"
+        app:srcCompat="@drawable/onboarding1" />
+
+    <TextView
+        android:id="@+id/onboarding1_msg"
+        android:layout_width="389dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:text="@string/onboarding1_msg"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/dark_purple"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/onboarding1" />
+
+    <ImageView
+        android:id="@+id/onboarding1pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/onboarding1_msg"
+        app:srcCompat="@drawable/onboarding1pic" />
+
+    <Button
+        android:id="@+id/btnSkip1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="45dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/white"
+        android:text="@string/btnSkip1"
+        android:textColor="@color/dark_purple"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNext1"
+        app:strokeColor="@color/dark_purple" />
+
+    <Button
+        android:id="@+id/btnNext1"
+        android:layout_width="182dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="2dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/dark_purple"
+        android:text="@string/btnNext1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSkip1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/onboarding1pic" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

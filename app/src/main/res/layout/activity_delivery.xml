@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity_delivery">
+
+    <LinearLayout
+        android:layout_width="414dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnProceedToPayment">
+
+        <ImageView
+            android:id="@+id/delivery_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/nav_home" />
+
+        <ImageView
+            android:id="@+id/delivery_health"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/nav_health" />
+
+        <ImageView
+            android:id="@+id/delivery_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/nav_shop" />
+
+        <ImageView
+            android:id="@+id/delivery_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/nav_profile" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_top_edit_profile4"
+        android:layout_width="410dp"
+        android:layout_height="77dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_top" />
+
+    <TextView
+        android:id="@+id/delivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delivery"
+        android:textColor="@color/dark_purple"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/img_top_edit_profile4"
+        app:layout_constraintEnd_toEndOf="@+id/img_top_edit_profile4"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/img_top_edit_profile4"
+        app:layout_constraintTop_toTopOf="@+id/img_top_edit_profile4" />
+
+    <TextView
+        android:id="@+id/delivery_information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/delivery_information"
+        android:textColor="@color/dark_purple"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_top_edit_profile4" />
+
+    <ImageView
+        android:id="@+id/delivery_img"
+        android:layout_width="276dp"
+        android:layout_height="178dp"
+        app:layout_constraintBottom_toTopOf="@+id/labelDeliveryName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delivery_information"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/delivery_img" />
+
+    <EditText
+        android:id="@+id/hntDeliveryName"
+        android:layout_width="280dp"
+        android:layout_height="43dp"
+        android:backgroundTint="@color/dark_purple"
+        android:ems="10"
+        android:hint="@string/hntDeliveryName"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelDeliveryName" />
+
+    <TextView
+        android:id="@+id/labelDeliveryEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="356dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/labelDeliveryEmail"
+        android:textColor="@color/dark_purple"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/petNameData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/hntDeliveryPhone"
+        android:layout_width="278dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/dark_purple"
+        android:ems="10"
+        android:hint="@string/hntDeliveryPhone"
+        android:inputType="phone"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelDeliveryPhone" />
+
+    <Button
+        android:id="@+id/btnProceedToPayment"
+        android:layout_width="271dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="@color/dark_purple"
+        android:text="@string/btnProceedToPayment"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/labelDeliveryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="292dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/labelDeliveryName"
+        android:textColor="@color/dark_purple"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/petNameData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.184"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelDeliveryAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/labelDeliveryAddress"
+        android:textColor="@color/dark_purple"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/petNameData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.193"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelDeliveryPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="428dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/labelDeliveryPhone"
+        android:textColor="@color/dark_purple"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/petNameData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/hntDeliveryAddress"
+        android:layout_width="279dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/dark_purple"
+        android:ems="10"
+        android:hint="@string/hntDeliveryAddress"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelDeliveryAddress" />
+
+    <EditText
+        android:id="@+id/hntDeliveryEmail"
+        android:layout_width="278dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/dark_purple"
+        android:ems="10"
+        android:hint="@string/hntDeliveryEmail"
+        android:inputType="textEmailAddress"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelDeliveryEmail" />
+
+    <ImageView
+        android:id="@+id/deliveryArrowBack"
+        android:layout_width="42dp"
+        android:layout_height="39dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_top_edit_profile4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrowback" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

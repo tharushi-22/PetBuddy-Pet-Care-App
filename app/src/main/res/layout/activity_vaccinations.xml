@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity_vaccinations">
+
+    <LinearLayout
+        android:layout_width="408dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVaccAdd">
+
+        <ImageView
+            android:id="@+id/vaccinations_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/nav_home" />
+
+        <ImageView
+            android:id="@+id/vaccinations_health"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/nav_health" />
+
+        <ImageView
+            android:id="@+id/vaccinations_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/nav_shop" />
+
+        <ImageView
+            android:id="@+id/vaccinations_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/nav_profile" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnVaccAdd"
+        android:layout_width="129dp"
+        android:layout_height="55dp"
+        android:backgroundTint="@color/dark_purple"
+        android:text="@string/btnVaccAdd"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hntVacc_price" />
+
+    <EditText
+        android:id="@+id/hntVacc_name"
+        android:layout_width="280dp"
+        android:layout_height="43dp"
+        android:backgroundTint="@color/dark_purple"
+        android:ems="10"
+        android:hint="@string/hntVacc_name"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vacc_name" />
+
+    <EditText
+        android:id="@+id/hntVacc_vet"
+        android:layout_width="280dp"
+        android:layout_height="43dp"
+        android:backgroundTint="@color/dark_purple"
+        android:ems="10"
+        android:hint="@string/hntVacc_vet"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vacc_vet" />
+
+    <EditText
+        android:id="@+id/hntVacc_price"
+        android:layout_width="280dp"
+        android:layout_height="43dp"
+        android:backgroundTint="@color/dark_purple"
+        android:ems="10"
+        android:hint="@string/hntVacc_price"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vacc_price" />
+
+    <TextView
+        android:id="@+id/vaccination_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/vaccination_title"
+        android:textColor="@color/dark_purple"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/vaccination_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_top_edit_profile5" />
+
+    <ImageView
+        android:id="@+id/img_top_edit_profile5"
+        android:layout_width="410dp"
+        android:layout_height="77dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_top" />
+
+    <TextView
+        android:id="@+id/vaccination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vaccination"
+        android:textColor="@color/dark_purple"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/img_top_edit_profile5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_top_edit_profile5" />
+
+    <ImageView
+        android:id="@+id/vaccination_img"
+        android:layout_width="264dp"
+        android:layout_height="240dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vaccination_title"
+        app:srcCompat="@drawable/vaccination_img" />
+
+    <ImageView
+        android:id="@+id/vaccinationArrowBack"
+        android:layout_width="42dp"
+        android:layout_height="39dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_top_edit_profile5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrowback" />
+
+    <TextView
+        android:id="@+id/vacc_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/vacc_name"
+        android:textColor="@color/dark_purple"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/petNameData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vaccination_img" />
+
+    <TextView
+        android:id="@+id/vacc_vet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/vacc_vet"
+        android:textColor="@color/dark_purple"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/petNameData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hntVacc_date" />
+
+    <TextView
+        android:id="@+id/vacc_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/vacc_date"
+        android:textColor="@color/dark_purple"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/petNameData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.171"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hntVacc_name" />
+
+    <TextView
+        android:id="@+id/vacc_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/vacc_price"
+        android:textColor="@color/dark_purple"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/petNameData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hntVacc_vet" />
+
+    <EditText
+        android:id="@+id/hntVacc_date"
+        android:layout_width="282dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="64dp"
+        android:backgroundTint="@color/dark_purple"
+        android:ems="10"
+        android:hint="@string/hntVacc_date"
+        android:inputType="date"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vacc_date" />
+</androidx.constraintlayout.widget.ConstraintLayout>

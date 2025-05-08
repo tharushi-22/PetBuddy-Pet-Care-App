@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity_treatments">
+
+    <LinearLayout
+        android:layout_width="413dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTreatAdd">
+
+        <ImageView
+            android:id="@+id/treatments_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/nav_home" />
+
+        <ImageView
+            android:id="@+id/treatments_health"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/nav_health" />
+
+        <ImageView
+            android:id="@+id/treatments_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/nav_shop" />
+
+        <ImageView
+            android:id="@+id/treatments_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/nav_profile" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnTreatAdd"
+        android:layout_width="129dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/dark_purple"
+        android:text="@string/btnTreatAdd"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hntTreat_price" />
+
+    <EditText
+        android:id="@+id/hntTreat_price"
+        android:layout_width="280dp"
+        android:layout_height="43dp"
+        android:backgroundTint="@color/dark_purple"
+        android:ems="10"
+        android:hint="@string/hntTreat_price"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/treat_price" />
+
+    <TextView
+        android:id="@+id/treat_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/treat_price"
+        android:textColor="@color/dark_purple"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/petNameData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hntTreat_vet" />
+
+    <EditText
+        android:id="@+id/hntTreat_vet"
+        android:layout_width="280dp"
+        android:layout_height="43dp"
+        android:backgroundTint="@color/dark_purple"
+        android:ems="10"
+        android:hint="@string/hntTreat_vet"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/treat_vet" />
+
+    <TextView
+        android:id="@+id/treat_vet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/treat_vet"
+        android:textColor="@color/dark_purple"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/petNameData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hntTreat_date" />
+
+    <EditText
+        android:id="@+id/hntTreat_date"
+        android:layout_width="282dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="64dp"
+        android:backgroundTint="@color/dark_purple"
+        android:ems="10"
+        android:hint="@string/hntTreat_date"
+        android:inputType="date"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/treat_date" />
+
+    <TextView
+        android:id="@+id/treat_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/treat_date"
+        android:textColor="@color/dark_purple"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/petNameData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.171"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hntTreat_name" />
+
+    <EditText
+        android:id="@+id/hntTreat_name"
+        android:layout_width="280dp"
+        android:layout_height="43dp"
+        android:backgroundTint="@color/dark_purple"
+        android:ems="10"
+        android:hint="@string/hntTreat_name"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/treat_name" />
+
+    <TextView
+        android:id="@+id/treat_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/treat_name"
+        android:textColor="@color/dark_purple"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/petNameData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/treatment_img" />
+
+    <TextView
+        android:id="@+id/treatment_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/treatment_title"
+        android:textColor="@color/dark_purple"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_top_edit_profile6" />
+
+    <ImageView
+        android:id="@+id/img_top_edit_profile6"
+        android:layout_width="410dp"
+        android:layout_height="77dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_top" />
+
+    <TextView
+        android:id="@+id/treatment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/treatment"
+        android:textColor="@color/dark_purple"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/img_top_edit_profile6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_top_edit_profile6" />
+
+    <ImageView
+        android:id="@+id/treatmentArrowBack"
+        android:layout_width="42dp"
+        android:layout_height="39dp"
+        app:layout_constraintBottom_toTopOf="@+id/treatment_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_top_edit_profile6"
+        app:srcCompat="@drawable/arrowback" />
+
+    <ImageView
+        android:id="@+id/treatment_img"
+        android:layout_width="246dp"
+        android:layout_height="206dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginEnd="102dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/treatment_title"
+        app:srcCompat="@drawable/treatment_img" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

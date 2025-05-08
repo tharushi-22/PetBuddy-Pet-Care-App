@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity_shop">
+
+    <LinearLayout
+        android:layout_width="408dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accessories_data_img">
+
+        <ImageView
+            android:id="@+id/shop_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/nav_home" />
+
+        <ImageView
+            android:id="@+id/shop_health"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/nav_health" />
+
+        <ImageView
+            android:id="@+id/shop_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/nav_shop" />
+
+        <ImageView
+            android:id="@+id/shop_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/nav_profile" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/Food"
+        android:textColor="@color/dark_purple"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/food_data_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_bar_img" />
+
+    <TextView
+        android:id="@+id/Accessories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/Accessories"
+        android:textColor="@color/dark_purple"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/accessories_data_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/food_data_img" />
+
+    <ImageView
+        android:id="@+id/img_top_edit_profile8"
+        android:layout_width="410dp"
+        android:layout_height="77dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_top" />
+
+    <TextView
+        android:id="@+id/Shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Shop"
+        android:textColor="@color/dark_purple"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/img_top_edit_profile8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/search_bar_img"
+        android:layout_width="153dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="52dp"
+        app:layout_constraintEnd_toStartOf="@+id/icon_cart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_top_edit_profile8"
+        app:srcCompat="@drawable/search_bar_img" />
+
+    <ImageView
+        android:id="@+id/icon_cart"
+        android:layout_width="38dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_top_edit_profile8"
+        app:srcCompat="@drawable/icon_cart" />
+
+    <ImageView
+        android:id="@+id/food_data_img"
+        android:layout_width="402dp"
+        android:layout_height="222dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Food"
+        app:srcCompat="@drawable/food_data_img" />
+
+    <ImageView
+        android:id="@+id/accessories_data_img"
+        android:layout_width="408dp"
+        android:layout_height="215dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Accessories"
+        app:srcCompat="@drawable/accessories_data_img" />
+
+    <ImageView
+        android:id="@+id/shopArrowBack"
+        android:layout_width="42dp"
+        android:layout_height="39dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Shop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_top_edit_profile8"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/arrowback" />
+
+    <TextView
+        android:id="@+id/food_data1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/food_data1"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/food_data_img"
+        app:layout_constraintEnd_toEndOf="@+id/food_data_img"
+        app:layout_constraintHorizontal_bias="0.199"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/food_data_img"
+        app:layout_constraintVertical_bias="0.811" />
+
+    <TextView
+        android:id="@+id/food_data2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/food_data2"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/food_data_img"
+        app:layout_constraintEnd_toEndOf="@+id/food_data_img"
+        app:layout_constraintHorizontal_bias="0.782"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/food_data_img"
+        app:layout_constraintVertical_bias="0.816" />
+
+    <TextView
+        android:id="@+id/acc_data1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/acc_data1"
+        app:layout_constraintBottom_toBottomOf="@+id/accessories_data_img"
+        app:layout_constraintEnd_toEndOf="@+id/accessories_data_img"
+        app:layout_constraintHorizontal_bias="0.219"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/accessories_data_img"
+        app:layout_constraintVertical_bias="0.819" />
+
+    <TextView
+        android:id="@+id/acc_data2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/acc_data2"
+        app:layout_constraintBottom_toBottomOf="@+id/accessories_data_img"
+        app:layout_constraintEnd_toEndOf="@+id/accessories_data_img"
+        app:layout_constraintHorizontal_bias="0.718"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/accessories_data_img"
+        app:layout_constraintVertical_bias="0.819" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,216 @@
+<resources>
+    <string name="app_name">Lab_Exam-02</string>
+
+    <string name="welcome_msg">Welcome To PetBuddy!</string>
+    <string name="onboarding1_msg">“A happy pet means a happy you! Let’s make pet care simple and stress-free.”</string>
+    <string name="btnSkip1">Skip</string>
+    <string name="btnNext1">Next</string>
+
+    <string name="features_msg">“Stay on Top of Your Pet’s Needs”</string>
+    <string name="onboarding2_msg">Manage your pet’s health, shop for pet essentials, and make sure they’re always happy!</string>
+    <string name="btnSkip2">Skip</string>
+    <string name="btnNext2">Next</string>
+
+    <string name="get_started_msg">“Everything Your Pet Needs, All in One Place!”</string>
+    <string name="onboarding3_msg1">Let’s give your pet the care they deserve.</string>
+    <string name="onboarding3_msg2">Start Your Journey Now!</string>
+    <string name="btnGetStarted">Get Started!</string>
+
+    <string name="signUp">Create Account</string>
+    <string name="labelName">Name</string>
+    <string name="labelEmail">Email</string>
+    <string name="labelPhone">Phone</string>
+    <string name="labelPassword">Password</string>
+    <string name="labelConfirmPassword">Confirm Password</string>
+    <string name="edtName">Name</string>
+    <string name="edtEmail">Email</string>
+    <string name="edtPhone">Phone</string>
+    <string name="edtPassword">Password</string>
+    <string name="edtConfirmPassword">Confirm Password</string>
+    <string name="txtLogIn">Already have an account?</string>
+    <string name="btnLogin">Log In</string>
+    <string name="btnSignUp">Sign Up</string>
+
+    <string name="logIn">Log In</string>
+    <string name="txtEmail">Email</string>
+    <string name="txtPassword">Password</string>
+    <string name="hntEmail">Email</string>
+    <string name="hntPassword">Password</string>
+    <string name="txtSignUp">Don’t have an account?</string>
+    <string name="btnSignup">Sign Up</string>
+    <string name="btnLogIn">Log In</string>
+
+    <string name="Home">Hey Tharushi!</string>
+    <string name="home_msg1">What are you looking for ?</string>
+    <string name="home_msg2">All the Pet Care services you need in One Place!</string>
+    <string name="home_msg3">Let’s keep your furry friend happy and healthy!</string>
+    <string name="food">Food</string>
+    <string name="accessories">Accessories</string>
+    <string name="health">Health</string>
+
+    <string name="profile">Profile</string>
+    <string name="btnEditProfile">Edit Profile</string>
+    <string name="btnMyPets">My Pets</string>
+    <string name="btnMyExpenses">My Expenses</string>
+    <string name="btnContactUs">Contact Us</string>
+    <string name="btnLogOut">Log Out</string>
+
+    <string name="editProfile">Edit Profile</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="nameData">Tharushi Gallage</string>
+    <string name="emailData">tharushigallage@gmail.com</string>
+    <string name="phoneData">0711234567</string>
+    <string name="btnSave1">Save</string>
+
+    <string name="orderConfirmed_msg">Your Order has been Placed Successfully!</string>
+    <string name="orderThankYou_msg">Thank You for your Order</string>
+    <string name="btnContinueShopping">Continue Shopping</string>
+    <string name="btnBackToHome">Back To Home</string>
+
+    <string name="myPets">My Pets</string>
+    <string name="myPets_info">Scooby\'s Info</string>
+    <string name="addNewPet_msg">New Pet? Add Now!</string>
+    <string name="btnAddPet">Add a Pet</string>
+
+    <string name="petInfo">Scooby\'s Info</string>
+    <string name="petName">Name</string>
+    <string name="petAge">Age</string>
+    <string name="petBreed">Breed</string>
+    <string name="petGender">Gender</string>
+    <string name="petWeight">Weight</string>
+    <string name="petNameData">Scooby</string>
+    <string name="petAgeData">2</string>
+    <string name="petBreedData">German shepherd</string>
+    <string name="petGenderData">Male</string>
+    <string name="petWeightData">30kg</string>
+    <string name="btnSave2">Save</string>
+
+    <string name="addPet">Add a Pet</string>
+    <string name="labelPetName">Name</string>
+    <string name="labelPetAge">Age</string>
+    <string name="labelPetBreed">Breed</string>
+    <string name="labelPetGender">Gender</string>
+    <string name="labelPetWeight">Weight</string>
+    <string name="hntPetName">Name</string>
+    <string name="hntPetAge">Age</string>
+    <string name="hntPetBreed">Breed</string>
+    <string name="hntPetGender">Gender</string>
+    <string name="hntPetWeight">Weight</string>
+    <string name="btnAdd">Add</string>
+
+    <string name="delivery">Delivery</string>
+    <string name="delivery_information">Delivery Information</string>
+    <string name="labelDeliveryName">Name</string>
+    <string name="labelDeliveryEmail">Email</string>
+    <string name="labelDeliveryPhone">Phone</string>
+    <string name="labelDeliveryAddress">Address</string>
+    <string name="hntDeliveryName">Name</string>
+    <string name="hntDeliveryEmail">Email</string>
+    <string name="hntDeliveryPhone">Phone</string>
+    <string name="hntDeliveryAddress">Address</string>
+    <string name="btnProceedToPayment">Proceed To Payment</string>
+
+    <string name="vaccination">Vaccinations</string>
+    <string name="vaccination_title">Add new Vaccination</string>
+    <string name="vacc_name">Vaccine Name</string>
+    <string name="vacc_date">Date</string>
+    <string name="vacc_vet">Name of Vet</string>
+    <string name="vacc_price">Price</string>
+    <string name="hntVacc_name">Vaccine Name</string>
+    <string name="hntVacc_date">Date</string>
+    <string name="hntVacc_vet">Name of Vet</string>
+    <string name="hntVacc_price">Price</string>
+    <string name="btnVaccAdd">Add</string>
+
+    <string name="treatment">Treatments</string>
+    <string name="treatment_title">Add new Treatment</string>
+    <string name="treat_name">Treatment</string>
+    <string name="treat_date">Date</string>
+    <string name="treat_vet">Name of Vet</string>
+    <string name="treat_price">Price</string>
+    <string name="hntTreat_name">Treatment</string>
+    <string name="hntTreat_date">Date</string>
+    <string name="hntTreat_vet">Name of Vet</string>
+    <string name="hntTreat_price">Price</string>
+    <string name="btnTreatAdd">Add</string>
+
+    <string name="Health">Health</string>
+    <string name="Vaccinations">Vaccinations</string>
+    <string name="Past_treatments">Past Treatments</string>
+    <string name="vacc_data1">Rabies Vaccination\n22/12/2023\nDr Nadeera\nRs 1000</string>
+    <string name="vacc_data2">Leptospirosis\n15/01/2024\nDr Kamal\nRs 2800</string>
+    <string name="treat_data1">Food Allergy\n30/05/2024\nDr Nadeera\nRs 1500</string>
+    <string name="treat_data2">Skin Allergy\n24/08/2024\nDr Nadeera\nRs 2000</string>
+    <string name="btnAddVacc">Add</string>
+    <string name="btnAddTreat">Add</string>
+
+    <string name="Shop">Shop</string>
+    <string name="Food">Food</string>
+    <string name="Accessories">Accessories</string>
+    <string name="food_data1">Pedigree Meat and Rice\nRs 4000</string>
+    <string name="food_data2">Pedigree Meat and Rice\nRs 3500</string>
+    <string name="acc_data1">Red Pet Collar\nRs 500</string>
+    <string name="acc_data2">Blue Nylon Collar\nRs 600</string>
+
+    <string name="Cart">Cart</string>
+    <string name="item1">Pedigree Meat and Rice\nRs.4000</string>
+    <string name="item2">Blue Nylon Collar\nRs.600</string>
+    <string name="txtSubTotal">Subtotal</string>
+    <string name="txtDeliveryFee">Delivery Fee</string>
+    <string name="subTotal">Rs 4600.00</string>
+    <string name="deliveryFee">Rs   100.00</string>
+    <string name="txtTotal">Total</string>
+    <string name="total">Rs 4700.00</string>
+    <string name="btnProceedToCheckout">Proceed To Checkout</string>
+
+    <string name="Payment">Payment</string>
+    <string name="payment_title">Payment Details</string>
+    <string name="labelCardNum">Card Number</string>
+    <string name="labelNameOnCard">Name On Card</string>
+    <string name="labelExpDate">Exp Date</string>
+    <string name="labelcvc">CVC</string>
+    <string name="hntCardNum">Card Number</string>
+    <string name="hntNameOnCard">Name On Card</string>
+    <string name="hntExpDate">MM / YY</string>
+    <string name="hntcvc">CVC</string>
+    <string name="payment_SubTotal">Subtotal</string>
+    <string name="payment_DeliveryFee">Delivery Fee</string>
+    <string name="payment_subTotalValue">Rs 4600.00</string>
+    <string name="payment_deliveryFeeValue">Rs   100.00</string>
+    <string name="payment_txtTotal">Total</string>
+    <string name="payment_totalValue">Rs 4700.00</string>
+    <string name="btnPay">Pay</string>
+
+    <string name="Expenses">My Expenses</string>
+    <string name="summary_expenses">Summary of Expenses</string>
+    <string name="expFood">Food</string>
+    <string name="expHealth">Health</string>
+    <string name="expAcc">Accessories</string>
+    <string name="tdFood">Food</string>
+    <string name="tdHealth">Health</string>
+    <string name="tdAcc">Accessories</string>
+    <string name="colColor">Color</string>
+    <string name="colCategory">Category</string>
+    <string name="col_percentage">Percentage</string>
+    <string name="tdpercentage1">50%</string>
+    <string name="tdpercentage2">10%</string>
+    <string name="tdpercentage3">40%</string>
+    <string name="txtExp">Your Total Expenses for last Month</string>
+    <string name="totalExp">Rs 10000.00</string>
+
+    <string name="ContactUs">Contact Us</string>
+    <string name="txt_contact">You can get in touch with us through below platforms.We will reach out to you as soon as possible.</string>
+    <string name="cusSup">Customer Support</string>
+    <string name="Social">Social Media</string>
+    <string name="contact_num">Contact Number</string>
+    <string name="contact_email">Email</string>
+    <string name="num">011 1121234</string>
+    <string name="mail">petbuddy@gmail.com</string>
+    <string name="fb">petbuddy</string>
+    <string name="ig">petbuddy</string>
+    <string name="tw">petbuddy</string>
+    <string name="wa">077 4455665</string>
+</resources>
+

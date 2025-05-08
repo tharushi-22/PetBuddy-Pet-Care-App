@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity_order_confirmed">
+
+    <Button
+        android:id="@+id/btnBackToHome"
+        android:layout_width="204dp"
+        android:layout_height="49dp"
+        android:backgroundTint="@color/light_grey"
+        android:text="@string/btnBackToHome"
+        android:textColor="@color/dark_purple"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/orderThankYou_msg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnContinueShopping" />
+
+    <Button
+        android:id="@+id/btnContinueShopping"
+        android:layout_width="244dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/dark_purple"
+        android:text="@string/btnContinueShopping"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnBackToHome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderConfirmed_msg" />
+
+    <ImageView
+        android:id="@+id/img_up_order_page"
+        android:layout_width="429dp"
+        android:layout_height="136dp"
+        app:layout_constraintBottom_toTopOf="@+id/order_confirmed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_up" />
+
+    <ImageView
+        android:id="@+id/order_confirmed"
+        android:layout_width="156dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_up_order_page"
+        app:srcCompat="@drawable/order_confirmed" />
+
+    <TextView
+        android:id="@+id/orderConfirmed_msg"
+        android:layout_width="347dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/orderConfirmed_msg"
+        android:textAlignment="center"
+        android:textColor="@color/dark_purple"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnContinueShopping"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_confirmed" />
+
+    <TextView
+        android:id="@+id/orderThankYou_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/orderThankYou_msg"
+        android:textColor="@color/dark_purple"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/img_down_order_page"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBackToHome" />
+
+    <ImageView
+        android:id="@+id/img_down_order_page"
+        android:layout_width="441dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderThankYou_msg"
+        app:srcCompat="@drawable/img_down" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

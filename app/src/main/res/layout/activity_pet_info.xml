@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity_pet_info">
+
+    <LinearLayout
+        android:layout_width="413dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSave2">
+
+        <ImageView
+            android:id="@+id/petInfo_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/nav_home" />
+
+        <ImageView
+            android:id="@+id/petInfo_health"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/nav_health" />
+
+        <ImageView
+            android:id="@+id/petInfo_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/nav_shop" />
+
+        <ImageView
+            android:id="@+id/petInfo_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/nav_profile" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSave2"
+        android:layout_width="110dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/dark_purple"
+        android:text="@string/btnSave1"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/petWeightData" />
+
+    <TextView
+        android:id="@+id/petName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/petName"
+        android:textColor="@color/dark_purple"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/petNameData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/petNameData"
+        android:layout_width="308dp"
+        android:layout_height="34dp"
+        android:background="@color/light_grey"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="@string/petNameData"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:circularflow_radiusInDP="6"
+        app:layout_constraintBottom_toTopOf="@+id/petAge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.582"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/petAgeData"
+        android:layout_width="308dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/light_grey"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="@string/petAgeData"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:circularflow_radiusInDP="6"
+        app:layout_constraintBottom_toTopOf="@+id/petBreed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.582"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/petWeightData"
+        android:layout_width="308dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/light_grey"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="@string/petWeightData"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:circularflow_radiusInDP="6"
+        app:layout_constraintBottom_toTopOf="@+id/btnSave2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.582"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/petBreedData"
+        android:layout_width="308dp"
+        android:layout_height="34dp"
+        android:background="@color/light_grey"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="@string/petBreedData"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:circularflow_radiusInDP="6"
+        app:layout_constraintBottom_toTopOf="@+id/petGender"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.582"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/petGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="@string/petGender"
+        android:textColor="@color/dark_purple"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/petGenderData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/petBreed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/petBreed"
+        android:textColor="@color/dark_purple"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/petBreedData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/petAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/petAge"
+        android:textColor="@color/dark_purple"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/petAgeData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/petWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/petWeight"
+        android:textColor="@color/dark_purple"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/petWeightData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/petGenderData"
+        android:layout_width="308dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/light_grey"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="@string/petGenderData"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:circularflow_radiusInDP="6"
+        app:layout_constraintBottom_toTopOf="@+id/petWeight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.582"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_top_edit_profile2"
+        android:layout_width="410dp"
+        android:layout_height="77dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_top" />
+
+    <TextView
+        android:id="@+id/petInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/petInfo"
+        android:textColor="@color/dark_purple"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/img_top_edit_profile2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/img_top_edit_profile2"
+        app:layout_constraintTop_toTopOf="@+id/img_top_edit_profile2" />
+
+    <ImageView
+        android:id="@+id/petInfoArrowBack"
+        android:layout_width="42dp"
+        android:layout_height="39dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_top_edit_profile2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrowback" />
+
+    <ImageView
+        android:id="@+id/profile_pet"
+        android:layout_width="144dp"
+        android:layout_height="145dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_top_edit_profile2"
+        app:srcCompat="@drawable/profile_pet" />
+</androidx.constraintlayout.widget.ConstraintLayout>

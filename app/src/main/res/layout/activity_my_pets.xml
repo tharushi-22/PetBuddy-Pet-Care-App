@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity_my_pets">
+
+    <LinearLayout
+        android:layout_width="414dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="6dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddPet">
+
+        <ImageView
+            android:id="@+id/myPets_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/nav_home" />
+
+        <ImageView
+            android:id="@+id/myPets_health"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/nav_health" />
+
+        <ImageView
+            android:id="@+id/myPets_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/nav_shop" />
+
+        <ImageView
+            android:id="@+id/myPets_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/nav_profile" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_top_mypets"
+        android:layout_width="416dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/profile_owner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_top" />
+
+    <TextView
+        android:id="@+id/myPets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/myPets"
+        android:textColor="@color/dark_purple"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/img_top_mypets"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_top_mypets" />
+
+    <ImageView
+        android:id="@+id/mypet_info_img"
+        android:layout_width="381dp"
+        android:layout_height="177dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_top_mypets"
+        app:srcCompat="@drawable/mypet_info_img" />
+
+    <TextView
+        android:id="@+id/addNewPet_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addNewPet_msg"
+        android:textColor="@color/dark_purple"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/img_top_mypets"
+        app:layout_constraintTop_toBottomOf="@+id/mypet_info_img" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="347dp"
+        android:layout_height="282dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddPet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addNewPet_msg"
+        app:srcCompat="@drawable/addpet" />
+
+    <Button
+        android:id="@+id/btnAddPet"
+        android:layout_width="135dp"
+        android:layout_height="54dp"
+        android:backgroundTint="@color/dark_purple"
+        android:text="@string/btnAddPet"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/myPets_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="@string/myPets_info"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/addNewPet_msg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/img_top_mypets"
+        app:layout_constraintTop_toTopOf="@+id/mypet_info_img" />
+
+    <ImageView
+        android:id="@+id/myPetsArrowBack"
+        android:layout_width="42dp"
+        android:layout_height="39dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_top_mypets"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_top_mypets"
+        app:srcCompat="@drawable/arrowback" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
